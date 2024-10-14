@@ -29,10 +29,13 @@ import Github, { githubInfoLoader } from './components/github/Github'
     ]
   }
 ])*/
+/* <Route path="about" element={<About />}>
+      <Route path="divyanshu" element={}/>
+      </Route> this is the syntax agar kisi route ke andar nested loop banana hai matlab about/divyanshu*/
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Layout />}>
-      <Route path="about" element={<About />} />
+      <Route path="about" element={<About />}>
       <Route path="contact" element={<Contact />} />
       <Route path="" element={<Home />} />
       <Route path="user/:userId" element={<User/>}/>
